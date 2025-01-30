@@ -1,30 +1,42 @@
-import React, { useState } from 'react';
-import { Container,Summary,SummaryItem,Content } from './AboutUs.styled';
+import React from 'react';
+import { AboutLink, Item, Menu } from "./AboutUs.styled";
+
+import {
+  FaFolder,
+  FaFileCode,
+  FaChevronRight,
+  FaChevronDown,
+} from "react-icons/fa";
 
 const AboutUs = () => {
-    const [activeSection, setActiveSection] = useState('introduction');
-  
-    const sections = {
-      introduction: 'This is the introduction text about your app...',
-      history: 'Here, you can write about the history of your app...',
-      mission: 'This section can include your app\'s mission statement...',
-      team: 'Meet the team behind the app...'
-    };
-  
-    return (
-      <Container>
-        <Summary>
-          {Object.keys(sections).map((section) => (
-            <SummaryItem key={section} onClick={() => setActiveSection(section)}>
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </SummaryItem>
-          ))}
-        </Summary>
-        <Content>
-          {sections[activeSection]}
-        </Content>
-      </Container>
-    );
-  };
-  
-  export default AboutUs;
+  return (
+    <Menu>
+      <Item>
+        <FaChevronRight color="#21a1f1" />
+        <FaFolder color="#21a1f1" />
+        <AboutLink to="">bio</AboutLink>
+      </Item>
+      <Item>
+        <FaChevronRight color="#81A1C1" />
+        <FaFolder color="#43D9AD" />
+        <AboutLink to="work">work</AboutLink>
+      </Item>
+      <Item>
+        <FaChevronRight color="#00ff00" />
+        <FaFolder color="#00ff00" />
+        <AboutLink to="interests">interests</AboutLink>
+      </Item>
+      <Item>
+        <FaChevronDown color="#00ff00" />
+        <FaFolder color="#00ff00" />
+        <AboutLink to="university">education</AboutLink>
+      </Item>
+      <Item className="tab">
+        <FaFileCode color="#21a1f1" />
+        <AboutLink to="certifications">certifications</AboutLink>
+      </Item>
+    </Menu>
+  );
+};
+
+export default AboutUs;

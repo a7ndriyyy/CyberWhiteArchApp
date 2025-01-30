@@ -1,25 +1,26 @@
 
-import styled from 'styled-components';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
-export const Container = styled.div`
+export const Menu = styled.ul`
+  margin-left: 0;
+  padding: 16px;
+  list-style: none;
+`;
+
+export const Item = styled.li`
+  margin-left: 0;
+  margin-bottom: 8px;
   display: flex;
-`;
-
-export const Summary = styled.div`
-  width: 200px;
-  padding: 20px;
-  background-color: #f0f0f0;
-`;
-
-export const Content = styled.div`
-  flex-grow: 1;
-  padding: 20px;
-`;
-
-export const SummaryItem = styled.div`
-  cursor: pointer;
-  margin-bottom: 10px;
-  &:hover {
-    font-weight: bold;
+  align-items: center;
+  gap: 8px;
+  &.tab {
+    padding-left: 24px;
   }
+`;
+
+export const AboutLink = styled(NavLink)`
+  color: #607b96;
+  font-size: 16px;
+  font-weight: 400;
 `;
