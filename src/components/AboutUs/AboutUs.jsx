@@ -24,7 +24,7 @@ const AboutUs = () => {
       <Item>
         <FaChevronRight color="#00ff00" />
         <FaFolder color="#00ff00" />
-        <AboutLink to="interests">interests</AboutLink>
+        <AboutLink to="interests">History</AboutLink>
       </Item>
       <Item>
         <FaChevronDown color="#00ff00" />
