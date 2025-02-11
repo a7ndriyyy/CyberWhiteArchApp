@@ -22,11 +22,11 @@ export const Input = styled.input`
   border: none;
   border-radius: 5px;
   background: #333;
-  color: #fff;
+  color: #00ff00;
   font-size: 16px;
 
   &::placeholder {
-    color: #888;
+    color:  #61dafb;
   }
 `;
 
@@ -47,6 +47,6 @@ export const Button = styled.button`
 
 export const Message = styled.p`
   margin-top: 10px;
-  color: #ffcc00;
+  color:rgb(246, 4, 4);
   font-weight: bold;
 `;

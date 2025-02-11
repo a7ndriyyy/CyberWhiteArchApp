@@ -20,22 +20,22 @@ const Register = () => {
         setResponseMessage(`Помилка: ${data.message}`);
       }
     } catch (error) {
-      setResponseMessage("Помилка з'єднання з сервером.");
+      setResponseMessage("Error, we hack you :)");
     }
   };
 
   return (
     <Container>
-      <h2>Anonym Registration</h2>
+      <h2>Anonym Data</h2>
       <Form onSubmit={handleRegister}>
         <Input
           type="text"
-          placeholder="Введіть ім'я користувача"
+          placeholder="Enter your username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
         />
-        <Button type="submit">Зареєструватися</Button>
+        <Button type="submit">Registre</Button>
       </Form>
       {responseMessage && <Message>{responseMessage}</Message>}
     </Container>
