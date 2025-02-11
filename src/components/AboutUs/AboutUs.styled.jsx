@@ -10,7 +10,7 @@ export const ContainerAbout = styled.div`
 `;
 
 export const Menu = styled.ul`
-   heigth:86vh;
+ margin-top:300px;
   margin-left: 0;
   padding: 16px;
   list-style: none;
