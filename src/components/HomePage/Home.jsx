@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Register from '../Signup/Register';
+import Register from '../Signup/register';
 import {
   Container,
   VSCodeContainer,

@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   background-color:rgb(0, 0, 0); /* Dark background for hacker vibe */
   color:rgb(235, 240, 241); /* Light blue text for hacker aesthetic */
+  heigth:86vh;
 `;
 
 export const VSCodeContainer = styled.div`

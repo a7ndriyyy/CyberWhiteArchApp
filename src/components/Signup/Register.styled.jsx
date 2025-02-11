@@ -22,11 +22,11 @@ export const Input = styled.input`
   border: none;
   border-radius: 5px;
   background: #333;
-  color: #fff;
+  color: #00ff00;
   font-size: 16px;
 
   &::placeholder {
-    color: #888;
+      color:  #61dafb;
   }
 `;
 

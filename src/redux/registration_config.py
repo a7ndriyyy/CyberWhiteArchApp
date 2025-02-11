@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Connect to MangoDB
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('192.168.23.204:27017')
 db = client['registration_db']
 users_collection = db['users']
 

@@ -1,8 +1,4 @@
-
-
 import HeaderComponent from './components/Header';
-// import Home from './components/HomePage/Home';
-// import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { useEffect,useState,Suspense} from 'react';
 import Loader from './components/Loader/Loader'
 import PageRoutes from './X_File/PageRoutes';
@@ -32,12 +28,6 @@ function App() {
         <>
         <GlobalStyles/>
           <HeaderComponent />
-          {/* <Router>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/register" element={<RegistrationForm />} />
-            </Routes>
-          </Router> */}
           <Suspense fallback={<Loader />}>
             <PageRoutes />
             </Suspense>
