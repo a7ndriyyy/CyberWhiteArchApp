@@ -6,10 +6,11 @@ import {
     RightSection,
     NavLink,
     Dropdown,
-    DropdownContent,
+    DropdownContent
   } from './Header.styled';
 import AboutUs from '../AboutUs';
 import  Home from '../HomePage/Home';
+// import Logo from '../Logo/Logo';
 
 
 
@@ -39,6 +40,7 @@ const HeaderComponent = () => {
           {/* Right Section */}
           <RightSection>
             <p>Logo</p>
+            {/* <Logo></Logo> */}
           </RightSection>
         </HeaderContainer>
     );

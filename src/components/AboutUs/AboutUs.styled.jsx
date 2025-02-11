@@ -2,7 +2,15 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
+export const ContainerAbout = styled.div`
+    display: flex;
+  flex-direction: column;
+  background-color:rgb(0, 0, 0); /* Dark background for hacker vibe */
+  color:rgb(235, 240, 241); /* Light blue text for hacker aesthetic */
+`;
+
 export const Menu = styled.ul`
+ margin-top:300px;
   margin-left: 0;
   padding: 16px;
   list-style: none;

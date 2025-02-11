@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutLink, Item, Menu } from "./AboutUs.styled";
+import { AboutLink, Item, Menu , ContainerAbout } from "./AboutUs.styled";
 
 import {
   FaFolder,
@@ -10,6 +10,7 @@ import {
 
 const AboutUs = () => {
   return (
+    <ContainerAbout>
     <Menu>
       <Item>
         <FaChevronRight color="#21a1f1" />
@@ -36,6 +37,7 @@ const AboutUs = () => {
         <AboutLink to="certifications">certifications</AboutLink>
       </Item>
     </Menu>
+    </ContainerAbout>
   );
 };
 

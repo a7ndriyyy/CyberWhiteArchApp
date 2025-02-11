@@ -5,12 +5,12 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-color:rgb(0, 0, 0); /* Dark background for hacker vibe */
   color:rgb(235, 240, 241); /* Light blue text for hacker aesthetic */
 `;
 
 export const VSCodeContainer = styled.div`
+ margin-top:50px;
   width: 80%;
   max-width: 800px;
   background-color: #1e293b; /* Dark blue background for the code editor */
@@ -54,6 +54,7 @@ export const Code = styled.pre`
 `;
 
 export const RegisterButton = styled.button`
+  margin-bottom: 80px;
   margin-top: 20px;
   padding: 12px 24px;
   background-color: #2563eb; /* Vibrant blue button */

@@ -4,9 +4,10 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 20px;
   background-color: #282c34;
   color: #fff;
+
 `;
 
 export const LeftSection = styled.div`

@@ -1,5 +1,7 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
+import Register from '../Signup/Register';|
+
 import {
   Container,
   VSCodeContainer,
@@ -10,15 +12,23 @@ import {
   RegisterButton,
 } from './Home.styled';
 
+
 const Home = () => {
-    const navigate = useNavigate();
+  const [showRegister, setShowRegister] = useState(false);
+
+    // const navigate = useNavigate();
 
     const handleRegister = () => {
-      navigate('/register');
+      setShowRegister(true);
+      // navigate('/register');
     };
   
     return (
       <Container>
+        {showRegister ? (
+        <Register />
+      ) : (
+        <>
         <VSCodeContainer>
           {/* VS Code-like UI */}
           <TopBar>
@@ -33,6 +43,8 @@ const Home = () => {
           </Editor>
         </VSCodeContainer>
         <RegisterButton onClick={handleRegister}>Enter the System</RegisterButton>
+        </>
+      )}
       </Container>
   );
 };
