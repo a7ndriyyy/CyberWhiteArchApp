@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export const ContainerAbout = styled.div`
     display: flex;
   flex-direction: column;
-  background-color:rgb(0, 0, 0); /* Dark background for hacker vibe */
+  // background-color:rgb(0, 0, 0); /* Dark background for hacker vibe */
   color:rgb(235, 240, 241); /* Light blue text for hacker aesthetic */
 `;
 
