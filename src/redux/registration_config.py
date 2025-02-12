@@ -30,15 +30,15 @@ def register():
         return jsonify({'message': 'Internal server error'}), 500
 
 
-@app.route('/login', methods=['POST'])
-def login():
-    data = request.get_json()
-    token = data['token']
-    user = users_collection.find_one({'token': token})
-    if user:
-        return jsonify({'message': 'Login successful!'})
-    else: 
-        return jsonify({'message': 'Invalid token'}), 401
+# @app.route('/login', methods=['POST'])
+# def login():
+#     data = request.get_json()
+#     token = data['token']
+#     user = users_collection.find_one({'token': token})
+#     if user:
+#         return jsonify({'message': 'Login successful!'})
+#     else: 
+#         return jsonify({'message': 'Invalid token'}), 401
 
 if __name__ == '__main__':
     app.run(debug=True)
